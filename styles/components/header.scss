@@ -1,3 +1,6 @@
 .page-header {
 	z-index: $zindex-page-layout-children;
+	&__logo-middle {
+		color: red;
+	}
 }

@@ -1,4 +1,4 @@
-$products-gutter: 10px !default;
+$products-gutter: 2px;
 
 .products {
 	align-items: stretch;
@@ -13,7 +13,7 @@ $products-gutter: 10px !default;
 		border-radius: 5px;
 		flex-shrink: 0;
 		margin: $products-gutter;
-		padding: 10px;
+		padding: 0px;
 		position: relative;
 		transition: all ease-in-out 0.35s;
 
@@ -34,7 +34,7 @@ $products-gutter: 10px !default;
 			.products__image {
 				.img {
 					img {
-						transform: scale(1.1);
+						transform: scale(1.05);
 					}
 				}
 			}
@@ -51,7 +51,6 @@ $products-gutter: 10px !default;
 	}
 
 	&__title {
-
 		flex-grow: 2;
 		font-size: 0.9rem;
 
@@ -71,10 +70,8 @@ $products-gutter: 10px !default;
 			line-height: 0;
 
 			> span {
-				//might be it is not a good idea:
-				overflow: visible !important;
+				border-radius: 10px;
 			}
-
 			img {
 				height: auto;
 				transition: all ease-in-out 0.35s;
@@ -103,7 +100,6 @@ $products-gutter: 10px !default;
 		}
 
 		.old {
-
 			color: $text-muted;
 			display: inline-block;
 			font-size: 0.85rem;
@@ -115,7 +111,6 @@ $products-gutter: 10px !default;
 		}
 
 		.current {
-
 			display: inline-block;
 			font-size: 0.85rem;
 			font-weight: $front-font-weight-bold;
